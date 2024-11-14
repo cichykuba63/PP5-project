@@ -24,9 +24,9 @@
 		<script src="https://kit.fontawesome.com/7454208e0e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg position-sticky top-0">
+		<nav class="navbar navbar-expand-lg position-fixed w-100 top-0">
 			<div class="container">
-				<a class="navbar-brand" href="#"><i class="fa-solid fa-headset main-color"></i> progamers</a>
+				<a class="navbar-brand" href="#"><i class="fa-solid fa-headset main-color"></i> pro<span class="main-color">gamers</span></a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -39,7 +39,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav ms-auto">
-						<a class="nav-link active" href="#">Home</a>
+						<a class="nav-link active" href="#home">Home</a>
 						<a class="nav-link" href="#about-us">o nas</a>
 						<a class="nav-link" href="#portfolio">portfolio</a>
 						<a class="nav-link" href="#prices">ceny</a>
@@ -50,6 +50,16 @@
 				</div>
 			</div>
 		</nav>
+
+        <header class="header hero-img" id="home">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1>witajcie w pro<span class="main-color">gamers</span></h1>
+                <p>W miejscu, gdzie gry tworzymy z pasją.</p>
+                <a href="#about-us">poznaj nas</a>
+            </div>
+            <a class="icon" href="#about-us"><i class="fa-solid fa-chevron-down"></i></a>
+        </header>
 
 		<!-- bootstrap bundle (js + popper) -->
 		<script

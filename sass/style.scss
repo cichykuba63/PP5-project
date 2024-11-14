@@ -1,31 +1,27 @@
 @use './colors' as *;
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
+@use 'reset';
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: $dark;
+}
+
+.main-color {
+	color: $primary;
 }
 
 nav {
 	text-transform: uppercase;
-    
-    .navbar-nav .nav-link.active,
-    .navbar-nav .nav-link.show,
-    .navbar-brand:focus,
-    .navbar-brand:hover,
-    .nav-link:focus,
-    .nav-link:hover,
-    .navbar-nav .nav-link.active:hover,
-    .main-color {
-        color: $primary;
-    }
+	z-index: 1000;
+
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show,
+	.navbar-brand:focus,
+	.navbar-brand:hover,
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active:hover {
+		color: $primary;
+	}
 
 	.nav-link,
 	.navbar-brand,
@@ -33,7 +29,115 @@ nav {
 		color: $white;
 	}
 
-    .navbar-brand {
-        transition: color 0.2s;
+	.navbar-brand {
+		font-weight: bold;
+		letter-spacing: 1px;
+		transition: color 0.2s;
+	}
+
+	.navbar-toggler {
+		border: 1px solid $white;
+        font-size: 30px;
+		padding: 10px 15px;
+	}
+}
+
+header.hero-img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url('../img/header/ps-small.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    
+    .hero-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $shadow;
+        z-index: 1;
     }
+
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 15px;
+		padding: 0 20px;
+		text-align: center;
+		color: $white;
+        z-index: 10;
+
+		h1 {
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		a {
+			margin-top: 15px;
+			padding: 10px 20px;
+            color: $white;
+			border: 1px solid $white;
+			border-radius: 15px;
+			text-transform: uppercase;
+			transition: color 0.2s, background-color 0.2s;
+		}
+
+		a:hover {
+			background-color: $white;
+			color: $dark;
+		}
+	}
+
+    a.icon {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        color: $white;
+        font-size: 30px;
+        z-index: 10;
+    }
+
+}
+
+@media (width >= 430px) {
+    header.hero-img {
+        .hero-text {
+            gap: 10px;
+        }
+    }
+}
+
+@media (width >= 768px) {
+    header.hero-img {
+        .hero-text {
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (width >= 992px) {
+	header.hero-img {
+		background-image: url('../img/header/ps-big.jpg');
+	}
 }
