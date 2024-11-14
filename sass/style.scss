@@ -1,12 +1,39 @@
+@use './colors' as *;
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: $dark;
+}
+
+nav {
+	text-transform: uppercase;
+    
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show,
+    .navbar-brand:focus,
+    .navbar-brand:hover,
+    .nav-link:focus,
+    .nav-link:hover,
+    .navbar-nav .nav-link.active:hover,
+    .main-color {
+        color: $primary;
+    }
+
+	.nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: $white;
+	}
+
+    .navbar-brand {
+        transition: color 0.2s;
+    }
 }
