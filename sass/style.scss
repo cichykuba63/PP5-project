@@ -9,8 +9,13 @@ body {
 	color: $primary;
 }
 
+.shadow-bg {
+	background-color: $shadow;
+}
+
 nav {
 	text-transform: uppercase;
+	transition: background-color 0.2s;
 	z-index: 1000;
 
 	.navbar-nav .nav-link.active,
