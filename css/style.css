@@ -53,17 +53,44 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+section {
+  scroll-margin-top: 84px;
+}
+
 .main-color {
   color: #039dff;
 }
 
 .shadow-bg {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  margin: 5px auto 40px;
+  background-color: #039dff;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
 }
 
 nav {
   text-transform: uppercase;
-  transition: background-color 0.2s;
+  transition: background-color 0.4s;
   z-index: 1000;
 }
 nav .navbar-nav .nav-link.active,
@@ -102,14 +129,6 @@ header.hero-img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-header.hero-img .hero-shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
   z-index: 1;
 }
 header.hero-img .hero-text {
@@ -121,7 +140,6 @@ header.hero-img .hero-text {
   padding: 0 20px;
   text-align: center;
   color: #fff;
-  z-index: 10;
 }
 header.hero-img .hero-text h1 {
   font-weight: 300;
@@ -149,7 +167,58 @@ header.hero-img a.icon {
   padding: 5px 10px;
   color: #fff;
   font-size: 30px;
-  z-index: 10;
+  z-index: 1;
+}
+
+.about-us .about-us-card,
+.about-us .about-us-hero-card,
+.about-us-hero .about-us-card,
+.about-us-hero .about-us-hero-card {
+  margin: 20px 0;
+}
+.about-us .about-us-card .about-us-card-title,
+.about-us .about-us-card .about-us-hero-card-title,
+.about-us .about-us-hero-card .about-us-card-title,
+.about-us .about-us-hero-card .about-us-hero-card-title,
+.about-us-hero .about-us-card .about-us-card-title,
+.about-us-hero .about-us-card .about-us-hero-card-title,
+.about-us-hero .about-us-hero-card .about-us-card-title,
+.about-us-hero .about-us-hero-card .about-us-hero-card-title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.about-us .about-us-card i,
+.about-us .about-us-hero-card i,
+.about-us-hero .about-us-card i,
+.about-us-hero .about-us-hero-card i {
+  margin: 10px 0 15px;
+  font-size: 30px;
+}
+
+.about-us .about-us-card {
+  transition: color 0.3s;
+}
+.about-us .about-us-card-title {
+  text-transform: uppercase;
+}
+.about-us .about-us-card:hover {
+  color: #039dff;
+}
+
+.about-us-hero {
+  position: relative;
+  padding: 50px 0;
+  background-image: url("../img/main/about-us/processor-small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ddd;
+  z-index: 1;
+}
+.about-us-hero .hero-shadow {
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 @media (width >= 430px) {
@@ -169,7 +238,13 @@ header.hero-img a.icon {
   }
 }
 @media (width >= 992px) {
+  section {
+    scroll-margin-top: 72px;
+  }
   header.hero-img {
     background-image: url("../img/header/ps-big.jpg");
+  }
+  .about-us-hero {
+    background-image: url("../img/main/about-us/processor-big.jpg");
   }
 }/*# sourceMappingURL=style.css.map */
