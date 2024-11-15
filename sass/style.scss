@@ -181,6 +181,10 @@ header.hero-img {
 	}
 }
 
+.portfolio-carousel {
+	display: none;
+}
+
 @media (width >= 430px) {
 	header.hero-img {
 		.hero-text {
@@ -218,5 +222,39 @@ header.hero-img {
 
 	.about-us-hero {
 		background-image: url('../img/main/about-us/processor-big.jpg');
+	}
+
+	.portfolio-card-group {
+		display: none;
+	}
+
+	.portfolio-carousel {
+		display: block;
+		margin: 0 auto;
+		width: 70vw;
+		max-width: 900px;
+		height: auto;
+
+		.carousel-caption {
+			left: 0;
+			bottom: 10px;
+			width: 100%;
+			padding: 20px 0;
+			background-color: $shadow;
+
+			h5 {
+				padding-bottom: 5px;
+			}
+
+			p {
+				padding-bottom: 20px;
+			}
+		}
+
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			border-radius: 50%;
+			background-color: $dark;
+		}
 	}
 }

@@ -221,6 +221,10 @@ header.hero-img a.icon {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
+.portfolio-carousel {
+  display: none;
+}
+
 @media (width >= 430px) {
   header.hero-img .hero-text {
     gap: 10px;
@@ -246,5 +250,33 @@ header.hero-img a.icon {
   }
   .about-us-hero {
     background-image: url("../img/main/about-us/processor-big.jpg");
+  }
+  .portfolio-card-group {
+    display: none;
+  }
+  .portfolio-carousel {
+    display: block;
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 900px;
+    height: auto;
+  }
+  .portfolio-carousel .carousel-caption {
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .portfolio-carousel .carousel-caption h5 {
+    padding-bottom: 5px;
+  }
+  .portfolio-carousel .carousel-caption p {
+    padding-bottom: 20px;
+  }
+  .portfolio-carousel .carousel-control-prev-icon,
+  .portfolio-carousel .carousel-control-next-icon {
+    border-radius: 50%;
+    background-color: #333;
   }
 }/*# sourceMappingURL=style.css.map */
