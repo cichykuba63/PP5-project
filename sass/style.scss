@@ -289,6 +289,77 @@ header.hero-img {
 	}
 }
 
+.achievements {
+	.achievement-box {
+		text-align: center;
+	}
+
+	.achievement-box-icon {
+		font-size: 35px;
+		color: $white;
+		text-shadow: 0 0 5px $dark;
+	}
+
+	.achievement-box-number {
+		font-size: 25px;
+		color: $shadow-box;
+	}
+
+	.achievement-box-text {
+		padding-top: 5px;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}
+
+.contact {
+	position: relative;
+	background-image: url('../img/main/contact/skyline-small.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	z-index: 0;
+
+	.section-title,
+	.contact-box {
+		color: $light-grey;
+	}
+
+	.underline {
+		background-color: $light-grey;
+	}
+
+	.contact-box {
+		text-align: center;
+
+		a {
+			font-size: 20px;
+			margin: 0 10px;
+			padding: 10px;
+		}
+
+		i {
+			color: $light-grey;
+			transition: color 0.2s;
+		}
+
+		i:hover {
+			color: $primary;
+		}
+	}
+
+	.contact-title {
+		padding-bottom: 10px;
+		text-transform: uppercase;
+		font-size: 25px;
+	}
+
+	.contact-info {
+		padding: 8px 0;
+	}
+}
+
 @media (width >= 430px) {
 	header.hero-img {
 		.hero-text {
@@ -326,6 +397,10 @@ header.hero-img {
 				height: 300px;
 			}
 		}
+	}
+
+	.contact {
+		background-image: url('../img/main/contact/skyline-big.jpg');
 	}
 }
 

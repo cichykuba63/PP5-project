@@ -309,6 +309,64 @@ header.hero-img a.icon {
   transform: scale(0.96);
 }
 
+.achievements .achievement-box {
+  text-align: center;
+}
+.achievements .achievement-box-icon {
+  font-size: 35px;
+  color: #fff;
+  text-shadow: 0 0 5px #333;
+}
+.achievements .achievement-box-number {
+  font-size: 25px;
+  color: #555;
+}
+.achievements .achievement-box-text {
+  padding-top: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/main/contact/skyline-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 0;
+}
+.contact .section-title,
+.contact .contact-box {
+  color: #ddd;
+}
+.contact .underline {
+  background-color: #ddd;
+}
+.contact .contact-box {
+  text-align: center;
+}
+.contact .contact-box a {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px;
+}
+.contact .contact-box i {
+  color: #ddd;
+  transition: color 0.2s;
+}
+.contact .contact-box i:hover {
+  color: #039dff;
+}
+.contact .contact-title {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.contact .contact-info {
+  padding: 8px 0;
+}
+
 @media (width >= 430px) {
   header.hero-img .hero-text {
     gap: 10px;
@@ -329,6 +387,9 @@ header.hero-img a.icon {
   }
   .team .card img {
     height: 300px;
+  }
+  .contact {
+    background-image: url("../img/main/contact/skyline-big.jpg");
   }
 }
 @media (width >= 992px) {
