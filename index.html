@@ -19,6 +19,8 @@
 			rel="stylesheet"
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous" />
+		<!-- slick css -->
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<!-- font awesome -->
 		<script src="https://kit.fontawesome.com/7454208e0e.js" crossorigin="anonymous"></script>
@@ -64,7 +66,7 @@
 		</header>
 
 		<main class="main">
-			<section class="about-us bg-light py-5" id="about-us">
+			<section class="about-us py-5" id="about-us">
 				<div class="container">
 					<h2 class="section-title">o nas</h2>
 					<div class="underline"></div>
@@ -234,6 +236,207 @@
 					</div>
 				</div>
 			</section>
+			<section class="prices bg-light py-5" id="prices">
+				<div class="container">
+					<h2 class="section-title">ceny</h2>
+					<div class="underline"></div>
+					<div class="row justify-content-center">
+						<div class="col-md-6 col-lg-4">
+							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
+								<h5 class="price-box-title">Mobile</h5>
+								<div class="price-box-underline"></div>
+								<p class="price-box-text"><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i></p>
+								<p class="price-box-text"><span>Długość gry:</span> Krótka</p>
+								<p class="price-box-text"><span>Grafika:</span> Średnia</p>
+								<p class="price-box-text"><span>Online:</span> Brak</p>
+								<p class="price-box-text"><span>499 zł</span></p>
+								<button class="btn btn-secondary">zamawiam</button>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
+								<h5 class="price-box-title">Mobile & PC</h5>
+								<div class="price-box-underline"></div>
+								<p class="price-box-text">
+									<span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> <i class="fas fa-desktop"></i>
+								</p>
+								<p class="price-box-text"><span>Długość gry:</span> Średnia</p>
+								<p class="price-box-text"><span>Grafika:</span> Dobra</p>
+								<p class="price-box-text"><span>Online:</span> Tak</p>
+								<p class="price-box-text"><span>2449 zł</span></p>
+								<button class="btn btn-primary">zamawiam</button>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
+								<h5 class="price-box-title">Full Pack</h5>
+								<div class="price-box-underline"></div>
+								<p class="price-box-text">
+									<span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> <i class="fas fa-desktop"></i>
+									<i class="fas fa-gamepad"></i>
+								</p>
+								<p class="price-box-text"><span>Długość gry:</span> Długa</p>
+								<p class="price-box-text"><span>Grafika:</span> Najlepsza</p>
+								<p class="price-box-text"><span>Online:</span> Tak</p>
+								<p class="price-box-text"><span>4999 zł</span></p>
+								<button class="btn btn-secondary">zamawiam</button>
+							</div>
+						</div>
+					</div>
+					<p class="price-info text-center">
+						Skorzystaj z jednego z trzech głównych pakietów lub <a href="#contact">skontaktuj się</a> z nami i ustal
+						warunki indywidualne!
+					</p>
+					<p class="price-info text-muted text-center">
+						Pakiet <strong class="text-uppercase">full pack</strong> zawiera wersję gier na urządzenia mobilne, PC oraz
+						konsole.
+					</p>
+				</div>
+			</section>
+			<section class="team py-5" id="team">
+				<div class="hero-shadow"></div>
+				<h2 class="section-title">team</h2>
+				<div class="underline"></div>
+				<div class="container">
+					<div class="card-group team-carousel">
+						<div class="card mx-4 mx-md-2 my-5">
+							<img
+								src="./img/main/team/man-in-office.jpg"
+								class="card-img-top"
+								alt="śmiejący się mężczyzna z przyklejoną żółtą karteczką na czole w biurze" />
+							<div class="card-body">
+								<h5 class="card-title">CEO</h5>
+								<p class="card-text">Szef szefów. Nikt nie zna jego imienia. Podwładni mówią na niego "Pan Prezes".</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary d-flex justify-content-around">
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-4 mx-md-2 my-5">
+							<img
+								src="./img/main/team/beautiful-girl.jpg"
+								class="card-img-top"
+								alt="piękna kobieta z brązowymi włosami na rozmazanym tle" />
+							<div class="card-body">
+								<h5 class="card-title">HR</h5>
+								<p class="card-text">Paula zajmuje się rekrutowaniem młodych i gniewnych talentów.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary d-flex justify-content-around">
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-4 mx-md-2 my-5">
+							<img
+								src="./img/main/team/white-collar.jpg"
+								class="card-img-top"
+								alt="mężczyzna w niebieskim kombinezonie z białym kaskiem na głowie, z zaplecionymi rękoma na tle domu" />
+							<div class="card-body">
+								<h5 class="card-title">Grafik</h5>
+								<p class="card-text">Pan Wiesio jest grafikiem z długoletnim stażem na L4.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary d-flex justify-content-around">
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-4 mx-md-2 my-5">
+							<img
+								src="./img/main/team/laptop-man.jpg"
+								class="card-img-top"
+								alt="siedzący mężczyzna w koszuli z laptopem przy biurku w biurze" />
+							<div class="card-body">
+								<h5 class="card-title">Tomek</h5>
+								<p class="card-text">To jest Tomek. Nikt oprócz CEO nie wie, czym zajmuje się Tomek.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary d-flex justify-content-around">
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</small>
+							</div>
+						</div>
+						<div class="card mx-4 mx-md-2 my-5">
+							<img
+								src="./img/main/team/two-women.jpg"
+								class="card-img-top"
+								alt="dwie kobiety w ciemnym pomieszczeniu przy ekranie monitora" />
+							<div class="card-body">
+								<h5 class="card-title">Dział Jakości</h5>
+								<p class="card-text">Ania i Hania starannie sprawdzają każdy nasz produkt.</p>
+							</div>
+							<div class="card-footer">
+								<small class="text-body-secondary d-flex justify-content-around">
+									<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+									<a href="#"><i class="fa-brands fa-twitter"></i></a>
+									<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+								</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
 		</main>
 
 		<!-- bootstrap bundle (js + popper) -->
@@ -241,6 +444,11 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"></script>
+		<!-- slick jQuery + js -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="./js/slick.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

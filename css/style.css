@@ -51,6 +51,7 @@ table {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
 }
 
 section {
@@ -225,6 +226,89 @@ header.hero-img a.icon {
   display: none;
 }
 
+.prices .price-box {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.65);
+  transition: transform 0.2s;
+}
+.prices .price-box:hover {
+  transform: scale(1.03);
+}
+.prices .price-box-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-box p:last-of-type {
+  color: #333;
+  font-weight: bold;
+  font-size: 30px;
+}
+.prices .price-box-underline {
+  width: 70%;
+  height: 0px;
+  border: 1px solid #ddd;
+  margin: 10px auto;
+  background-color: #333;
+}
+.prices .price-box-text {
+  padding: 10px 0;
+}
+.prices .price-box-text span {
+  font-weight: bold;
+  margin-right: 3px;
+}
+.prices .price-box-text i {
+  padding: 0 3px;
+  font-size: 20px;
+}
+.prices button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-info {
+  padding: 10px 0;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+
+.team {
+  position: relative;
+  background-image: url("../img/main/team/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.team .section-title {
+  color: #ddd;
+}
+.team .card {
+  transition: transform 0.3s;
+}
+.team .card .card-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card .card-footer a {
+  padding: 5px 10px;
+}
+.team .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card:hover {
+  transform: scale(0.96);
+}
+
 @media (width >= 430px) {
   header.hero-img .hero-text {
     gap: 10px;
@@ -239,6 +323,12 @@ header.hero-img a.icon {
   }
   header.hero-img .hero-text a {
     font-size: 18px;
+  }
+  .prices .price-box-underline {
+    width: 80%;
+  }
+  .team .card img {
+    height: 300px;
   }
 }
 @media (width >= 992px) {

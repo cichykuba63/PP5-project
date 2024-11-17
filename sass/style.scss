@@ -3,6 +3,7 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
 }
 
 section {
@@ -175,7 +176,7 @@ header.hero-img {
 	background-attachment: fixed;
 	color: $light-grey;
 	z-index: 1;
-	
+
 	.hero-shadow {
 		background-color: $shadow-light;
 	}
@@ -183,6 +184,109 @@ header.hero-img {
 
 .portfolio-carousel {
 	display: none;
+}
+
+.prices {
+	.price-box {
+		box-shadow: 5px 5px 10px $shadow-light;
+		transition: transform 0.2s;
+	}
+
+	.price-box:hover {
+		transform: scale(1.03);
+	}
+
+	.price-box-title {
+		font-size: 18px;
+		text-transform: uppercase;
+		color: $primary;
+	}
+
+	.price-box p:last-of-type {
+		color: $dark;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	.price-box-underline {
+		width: 70%;
+		height: 0px;
+		border: 1px solid $light-grey;
+		margin: 10px auto;
+		background-color: $dark;
+	}
+
+	.price-box-text {
+		padding: 10px 0;
+
+		span {
+			font-weight: bold;
+			margin-right: 3px;
+		}
+
+		i {
+			padding: 0 3px;
+			font-size: 20px;
+		}
+	}
+
+	button {
+		margin-top: 10px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+	}
+
+	.price-info {
+		padding: 10px 0;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.team {
+	position: relative;
+	background-image: url('../img/main/team/background.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 1;
+
+	.section-title {
+		color: $light-grey;
+	}
+
+	.card {
+		transition: transform 0.3s;
+
+		.card-title {
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 500;
+			padding-bottom: 10px;
+		}
+		
+		.card-body {
+			height: 160px;
+		}
+		
+		.card-footer {
+			a {
+				padding: 5px 10px;
+			}
+		}
+
+		img {
+			height: 200px;
+			object-fit: cover;
+		}
+	}
+
+	.card:hover {
+		transform: scale(0.96);
+	}
 }
 
 @media (width >= 430px) {
@@ -206,6 +310,20 @@ header.hero-img {
 
 			a {
 				font-size: 18px;
+			}
+		}
+	}
+
+	.prices {
+		.price-box-underline {
+			width: 80%;
+		}
+	}
+
+	.team {
+		.card {
+			img {
+				height: 300px;
 			}
 		}
 	}
