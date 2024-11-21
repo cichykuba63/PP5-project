@@ -21,16 +21,18 @@
 			crossorigin="anonymous" />
 		<!-- slick css -->
 		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<!-- aos css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<!-- font awesome -->
 		<script src="https://kit.fontawesome.com/7454208e0e.js" crossorigin="anonymous"></script>
 	</head>
-	<body>
-		<nav class="navbar navbar-expand-lg position-fixed w-100 top-0 py-3">
+	<body data-bs-spy="scroll" data-bs-target="#navId">
+		<nav class="navbar navbar-expand-lg position-fixed w-100 top-0 py-3" id="navId">
 			<div class="container">
-				<a class="navbar-brand" href="#"
-					><i class="fa-solid fa-headset main-color"></i> pro<span class="main-color">gamers</span></a
-				>
+				<a class="navbar-brand" href="#home">
+					<i class="fa-solid fa-headset main-color"></i> pro<span class="main-color">gamers</span>
+				</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -54,74 +56,83 @@
 				</div>
 			</div>
 		</nav>
-
 		<header class="hero-img" id="home">
 			<div class="hero-shadow"></div>
 			<div class="hero-text">
-				<h1>witajcie w pro<span class="main-color">gamers</span></h1>
-				<p>W miejscu, gdzie gry tworzymy z pasją.</p>
-				<a href="#about-us">poznaj nas</a>
+				<h1 data-aos="fade-up" data-aos-delay="200">witajcie w pro<span class="main-color">gamers</span></h1>
+				<p data-aos="fade-up" data-aos-delay="400">W miejscu, gdzie gry tworzymy z pasją.</p>
+				<a data-aos="fade-up" data-aos-delay="600" href="#about-us" class="btn btn-outline-light mt-2 text-uppercase">poznaj nas</a>
 			</div>
-			<a class="icon" href="#about-us"><i class="fa-solid fa-chevron-down"></i></a>
+			<a class="icon bounce-top" href="#about-us"><i class="fa-solid fa-chevron-down"></i></a>
 		</header>
-
 		<main class="main">
 			<section class="about-us py-5" id="about-us">
 				<div class="container">
-					<h2 class="section-title">o nas</h2>
-					<div class="underline"></div>
+					<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">o nas</h2>
+					<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 					<div class="row">
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-mobile-screen"></i></p>
-							<p class="about-us-card-title">mobile gaming</p>
-							<p class="about-us-card-text">Tworzymy gry na urządzenia mobilne!</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-mobile-screen"></i></p>
+								<p class="about-us-card-title">mobile gaming</p>
+								<p class="about-us-card-text">Tworzymy gry na urządzenia mobilne!</p>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-desktop"></i></p>
-							<p class="about-us-card-title">desktop gaming</p>
-							<p class="about-us-card-text">Tworzymy gry na PC!</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-desktop"></i></p>
+								<p class="about-us-card-title">desktop gaming</p>
+								<p class="about-us-card-text">Tworzymy gry na PC!</p>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-file-code"></i></p>
-							<p class="about-us-card-title">najwyższe standardy</p>
-							<p class="about-us-card-text">Zachowujemy najwyższe standardy podczas pisania kodu.</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-file-code"></i></p>
+								<p class="about-us-card-title">najwyższe standardy</p>
+								<p class="about-us-card-text">Zachowujemy najwyższe standardy podczas pisania kodu.</p>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-paw"></i></p>
-							<p class="about-us-card-title">kochamy zwierzęta</p>
-							<p class="about-us-card-text">Wszystkie nasze gry są bezpieczne dla środowiska. 😉</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-paw"></i></p>
+								<p class="about-us-card-title">kochamy zwierzęta</p>
+								<p class="about-us-card-text">Wszystkie nasze gry są bezpieczne dla środowiska. 😉</p>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-burger"></i></p>
-							<p class="about-us-card-title">lubimy dobre jedzenie</p>
-							<p class="about-us-card-text">Lubimy dobrze zjeść przed przystąpieniem do naszych zadań.</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-burger"></i></p>
+								<p class="about-us-card-title">lubimy dobre jedzenie</p>
+								<p class="about-us-card-text">Lubimy dobrze zjeść przed przystąpieniem do naszych zadań.</p>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-card">
-							<p><i class="fa-solid fa-champagne-glasses"></i></p>
-							<p class="about-us-card-title">świetne relacje</p>
-							<p class="about-us-card-text">Zachowujemy świetne relacje z naszymi klientami!</p>
+						<div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+							<div class="text-center about-us-card">
+								<p><i class="fa-solid fa-champagne-glasses"></i></p>
+								<p class="about-us-card-title">świetne relacje</p>
+								<p class="about-us-card-text">Zachowujemy świetne relacje z naszymi klientami!</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
 			<section class="about-us-hero py-5 position-relative">
 				<div class="hero-shadow"></div>
 				<div class="container py-3">
-					<h2 class="section-title">tworzymy gry na platformy</h2>
-					<div class="underline"></div>
+					<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">tworzymy gry na platformy</h2>
+					<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 					<div class="row">
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-hero-card">
+						<div data-aos="zoom-in" class="col-12 col-sm-6 col-lg-4 text-center about-us-hero-card">
 							<p><i class="fa-brands fa-steam"></i></p>
 							<p class="about-us-hero-card-title">PC</p>
 							<p class="about-us-hero-card-text">Graj ze znajomymi na swoim blaszaku!</p>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 text-center about-us-hero-card">
+						<div data-aos="zoom-in" class="col-12 col-sm-6 col-lg-4 text-center about-us-hero-card">
 							<p><i class="fa-brands fa-playstation"></i></p>
 							<p class="about-us-hero-card-title">PlayStation</p>
 							<p class="about-us-hero-card-text">Gry świetnie prezentują się na konsoli od Sony!</p>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-4 m-sm-auto text-center about-us-hero-card">
+						<div data-aos="zoom-in" class="col-12 col-sm-6 col-lg-4 m-sm-auto text-center about-us-hero-card">
 							<p><i class="fa-brands fa-xbox"></i></p>
 							<p class="about-us-hero-card-title">Xbox</p>
 							<p class="about-us-hero-card-text">Fani Xboxa spędzą z nami mnóstwo godzin!</p>
@@ -131,8 +142,8 @@
 			</section>
 			<section class="portfolio py-5" id="portfolio">
 				<div class="container">
-					<h2 class="section-title">portfolio</h2>
-					<div class="underline"></div>
+					<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">portfolio</h2>
+					<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 					<div class="portfolio-card-group card-group">
 						<div class="card me-2">
 							<img
@@ -238,10 +249,10 @@
 			</section>
 			<section class="prices bg-light py-5" id="prices">
 				<div class="container">
-					<h2 class="section-title">ceny</h2>
-					<div class="underline"></div>
+					<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">ceny</h2>
+					<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 					<div class="row justify-content-center">
-						<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-up" class="col-md-6 col-lg-4">
 							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
 								<h5 class="price-box-title">Mobile</h5>
 								<div class="price-box-underline"></div>
@@ -253,7 +264,7 @@
 								<button class="btn btn-secondary">zamawiam</button>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-up" class="col-md-6 col-lg-4">
 							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
 								<h5 class="price-box-title">Mobile & PC</h5>
 								<div class="price-box-underline"></div>
@@ -264,10 +275,10 @@
 								<p class="price-box-text"><span>Grafika:</span> Dobra</p>
 								<p class="price-box-text"><span>Online:</span> Tak</p>
 								<p class="price-box-text"><span>2449 zł</span></p>
-								<button class="btn btn-primary">zamawiam</button>
+								<button class="btn btn-secondary">zamawiam</button>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4">
+						<div data-aos="fade-up" class="col-md-6 col-lg-4">
 							<div class="price-box text-center m-4 mx-sm-5 mx-md-3 mx-xxl-4 py-4">
 								<h5 class="price-box-title">Full Pack</h5>
 								<div class="price-box-underline"></div>
@@ -295,8 +306,8 @@
 			</section>
 			<section class="team py-5" id="team">
 				<div class="hero-shadow"></div>
-				<h2 class="section-title">team</h2>
-				<div class="underline"></div>
+				<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">team</h2>
+				<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 				<div class="container">
 					<div class="card-group team-carousel">
 						<div class="card mx-4 mx-md-2 my-5">
@@ -388,36 +399,36 @@
 				</div>
 			</section>
 			<section class="achievements py-5" id="achievements">
-				<h2 class="section-title">osiągnięcia</h2>
-				<div class="underline"></div>
+				<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">osiągnięcia</h2>
+				<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 				<div class="container">
 					<div class="row">
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="100" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-solid fa-thumbs-up"></i></p>
 							<p class="achievement-box-number">100%</p>
 							<p class="achievement-box-text">Zadowolonych klientów</p>
 						</div>
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="50" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-solid fa-trophy"></i></p>
 							<p class="achievement-box-number">37</p>
 							<p class="achievement-box-text">Zdobytych nagród</p>
 						</div>
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="200" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-solid fa-user-group"></i></p>
 							<p class="achievement-box-number">143</p>
 							<p class="achievement-box-text">Pracowników</p>
 						</div>
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="250" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-regular fa-building"></i></p>
 							<p class="achievement-box-number">7</p>
 							<p class="achievement-box-text">Nowoczesnych biur</p>
 						</div>
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="100" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-solid fa-dice"></i></p>
 							<p class="achievement-box-number">58</p>
 							<p class="achievement-box-text">Stworzonych gier</p>
 						</div>
-						<div class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
+						<div data-aos="zoom-in" data-aos-delay="320" class="achievement-box col-sm-6 col-md-4 col-xl-2 my-4">
 							<p class="achievement-box-icon"><i class="fa-solid fa-share-nodes"></i></p>
 							<p class="achievement-box-number">80.000</p>
 							<p class="achievement-box-text">Fanów w social media</p>
@@ -427,18 +438,20 @@
 			</section>
 			<section class="contact py-5" id="contact">
 				<div class="hero-shadow"></div>
-				<h2 class="section-title">kontakt</h2>
-				<div class="underline"></div>
+				<h2 data-aos="fade-up" data-aos-offset="100" class="section-title">kontakt</h2>
+				<div data-aos="fade-up" data-aos-offset="100" class="underline"></div>
 				<div class="container">
 					<div class="row">
-						<div class="contact-box col-md-6 col-lg-4 order-1 my-4">
+						<div data-aos="fade-up" class="contact-box col-md-6 col-lg-4 order-1 my-4">
 							<h2 class="contact-title">główna siedziba</h2>
 							<p class="contact-info">ul. Sezamkowa 0</p>
 							<p class="contact-info">00-000 Kraków</p>
 							<p class="contact-info">+48 000 000 000</p>
 							<p class="contact-info">sample@mail.com</p>
 						</div>
-						<div class="contact-box col-lg-4 order-0 order-lg-1 my-4 d-flex flex-column justify-content-center">
+						<div
+							data-aos="fade-up"
+							class="contact-box col-lg-4 order-0 order-lg-1 my-4 d-flex flex-column justify-content-center">
 							<h2 class="contact-title">social media</h2>
 							<div class="links">
 								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -446,7 +459,7 @@
 								<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 							</div>
 						</div>
-						<div class="contact-box col-md-6 col-lg-4 order-1 my-4">
+						<div data-aos="fade-up" class="contact-box col-md-6 col-lg-4 order-1 my-4">
 							<h2 class="contact-title">siedziba w Londynie</h2>
 							<p class="contact-info">Milk Street 0</p>
 							<p class="contact-info">00-000 London</p>
@@ -457,17 +470,22 @@
 				</div>
 			</section>
 		</main>
-
-		<!-- bootstrap bundle (js + popper) -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"></script>
+		<footer class="bg-dark text-light py-4 text-center">
+			<p>&copy; <span class="year"></span> | ProGamers</p>
+		</footer>
 		<!-- slick jQuery + js -->
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="./js/slick.js"></script>
+		<!-- aos js -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./js/aos.js"></script>
+		<!-- bootstrap bundle (js + popper) -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
