@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="pl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Jakub Słowiak, Szymon Wróblewski" />
-		<meta name="keywords" content="#" />
-		<meta name="description" content="#" />
+		<meta name="keywords" content="games, video games, cars, battles" />
+		<meta name="description" content="A website that sells video games (and not only)" />
 		<title>ProGamers</title>
 		<!-- font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,7 +60,9 @@
 			<div class="hero-text">
 				<h1 data-aos="fade-up" data-aos-delay="200">witajcie w pro<span class="main-color">gamers</span></h1>
 				<p data-aos="fade-up" data-aos-delay="400">W miejscu, gdzie gry tworzymy z pasją.</p>
-				<a data-aos="fade-up" data-aos-delay="600" href="#about-us" class="btn btn-outline-light mt-2 text-uppercase">poznaj nas</a>
+				<a data-aos="fade-up" data-aos-delay="600" href="#about-us" class="btn btn-outline-light mt-2 text-uppercase"
+					>poznaj nas</a
+				>
 			</div>
 			<a class="icon bounce-top" href="#about-us"><i class="fa-solid fa-chevron-down"></i></a>
 		</header>
@@ -261,7 +262,9 @@
 								<p class="price-box-text"><span>Grafika:</span> Średnia</p>
 								<p class="price-box-text"><span>Online:</span> Brak</p>
 								<p class="price-box-text"><span>499 zł</span></p>
-								<button class="btn btn-secondary">zamawiam</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">
+									zamawiam
+								</button>
 							</div>
 						</div>
 						<div data-aos="fade-up" class="col-md-6 col-lg-4">
@@ -275,7 +278,9 @@
 								<p class="price-box-text"><span>Grafika:</span> Dobra</p>
 								<p class="price-box-text"><span>Online:</span> Tak</p>
 								<p class="price-box-text"><span>2449 zł</span></p>
-								<button class="btn btn-secondary">zamawiam</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">
+									zamawiam
+								</button>
 							</div>
 						</div>
 						<div data-aos="fade-up" class="col-md-6 col-lg-4">
@@ -290,7 +295,9 @@
 								<p class="price-box-text"><span>Grafika:</span> Najlepsza</p>
 								<p class="price-box-text"><span>Online:</span> Tak</p>
 								<p class="price-box-text"><span>4999 zł</span></p>
-								<button class="btn btn-secondary">zamawiam</button>
+								<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formModal">
+									zamawiam
+								</button>
 							</div>
 						</div>
 					</div>
@@ -302,6 +309,83 @@
 						Pakiet <strong class="text-uppercase">full pack</strong> zawiera wersję gier na urządzenia mobilne, PC oraz
 						konsole.
 					</p>
+				</div>
+				<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="formModalLabel">Formularz</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+							</div>
+							<div class="modal-body">
+								<div id="errDiv" class="alert alert-danger d-none" role="alert">
+									Wszystkie pola muszą być uzupełnione!
+								</div>
+								<form id="priceForm">
+									<div class="mb-3">
+										<label for="email" class="form-label">Adres email</label>
+										<input
+											type="email"
+											class="form-control"
+											id="priceForm-email"
+											placeholder="sample@email.com"
+											required />
+									</div>
+									<div class="mb-3">
+										<label for="firstName" class="form-label">Imię</label>
+										<input type="text" class="form-control" id="priceForm-firstName" placeholder="Jan" required />
+									</div>
+									<div class="mb-3">
+										<label for="lastName" class="form-label">Nazwisko</label>
+										<input type="text" class="form-control" id="priceForm-lastName" placeholder="Kowalski" required />
+									</div>
+									<div class="mb-3">
+										<label for="phone" class="form-label">Numer telefonu</label>
+										<input type="tel" class="form-control" id="priceForm-phone" placeholder="000 000 000" required />
+									</div>
+									<div class="mb-3">
+										<label for="contact-select-gender" class="form-label">Gatunek</label>
+										<select
+											class="form-select price-select-gameType"
+											aria-label="select-gameType"
+											id="priceForm-select-gameType"
+											required>
+											<option selected disabled>Wybierz jedną z poniższych</option>
+											<option>Przygodowa</option>
+											<option>Strzelanka</option>
+											<option>Wyścigowa</option>
+											<option>Horror</option>
+											<option>Inna (opisz jaki we wstępnym opisie gry)</option>
+										</select>
+									</div>
+									<div class="mb-3">
+										<label for="contact-select-gender" class="form-label">Tryb multiplayer</label>
+										<select
+											class="form-select price-select-multiplayer"
+											aria-label="select-multiplayer"
+											id="priceForm-select-multiplayer"
+											required>
+											<option selected>Tak</option>
+											<option>Nie</option>
+										</select>
+									</div>
+									<div class="mb-3">
+										<label for="gameDescription" class="form-label">Wstępny opis gry</label>
+										<textarea
+											class="form-control"
+											id="priceForm-gameDescription"
+											rows="3"
+											placeholder="Ogólny zamysł gry - fabuła, postacie, na jaką platformę etc."
+											required></textarea>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+										<button type="submit" class="btn btn-primary">Wyślij</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="team py-5" id="team">
@@ -466,13 +550,95 @@
 							<p class="contact-info">+44 000 000 000</p>
 							<p class="contact-info">sample@mail.com</p>
 						</div>
+						<div data-aos="fade-up" class="contact-form-box order-2 col-md-6 col-xl-4 mx-auto mt-4">
+							<h2 class="contact-title text-center mb-4">Skontaktuj się z nami!</h2>
+							<form id="contact-form">
+								<div class="mb-3">
+									<label for="contact-email" class="form-label">Adres email</label>
+									<input type="email" class="form-control" id="contact-email" placeholder="name@example.com" required />
+								</div>
+								<div class="mb-3">
+									<label for="contact-select-gender" class="form-label">Zwrot grzecznościowy</label>
+									<select
+										class="form-select contact-select-gender"
+										aria-label="select-gender"
+										id="contact-select-gender"
+										required>
+										<option selected>Pan</option>
+										<option>Pani</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<label for="contact-firstName" class="form-label">Imię</label>
+									<input type="text" class="form-control" id="contact-firstName" placeholder="Jan" required />
+								</div>
+								<div class="mb-3">
+									<label for="contact-lastName" class="form-label">Nazwisko</label>
+									<input type="text" class="form-control" id="contact-lastName" placeholder="Nowak" required required />
+								</div>
+								<div class="mb-3">
+									<label for="contact-select-topic" class="form-label">Wybierz temat</label>
+									<select
+										class="form-select contact-select-topic"
+										aria-label="select-topic"
+										id="contact-select-topic"
+										required>
+										<option selected disabled>Wybierz temat</option>
+										<option>Zapytaj o produkt</option>
+										<option>Zapytaj o dostępność</option>
+										<option>Zwrot towaru</option>
+										<option>Problem z zamówieniem</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<label for="contact-textArea" class="form-label">Treść wiadomości</label>
+									<textarea class="form-control" id="contact-textArea" rows="5" required></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary mt-3 btn-contact-form">Wyślij formularz</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer class="bg-dark text-light py-4 text-center">
+		<footer class="bg-dark text-light py-5 text-center">
 			<p>&copy; <span class="year"></span> | ProGamers</p>
+			<div class="container mt-5">
+				<hr>
+				<h2 class="main-color">Oceń nas!</h2>
+				<p class="mb-5">Chcielibyśmy poznać Twoją opinię!</p>
+	
+				<div id="feedbackForm" class="d-none">
+					<form id="rateForm">
+						<div class="mb-3">
+							<label for="name" class="form-label">Imię</label>
+							<input type="text" class="form-control" id="name" placeholder="Jan" required />
+						</div>
+						<div class="mb-3">
+							<label for="email" class="form-label">Adres email</label>
+							<input type="email" class="form-control" id="email" placeholder="sample@email.com" required />
+						</div>
+						<div class="mb-3">
+							<label for="rating" class="form-label">Ocena</label>
+							<select class="form-select" id="rating" required>
+								<option value="" disabled selected>Wybierz ocenę</option>
+								<option value="1">1 - Bardzo źle</option>
+								<option value="2">2 - Źle</option>
+								<option value="3">3 - Średnio</option>
+								<option value="4">4 - Dobrze</option>
+								<option value="5">5 - Doskonale</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="comment" class="form-label">Komentarz</label>
+							<textarea class="form-control" id="comment" rows="3" placeholder="Twoje uwagi..." required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary mt-5">Wyślij opinię</button>
+					</form>
+				</div>
+			</div>
 		</footer>
+		
 		<!-- slick jQuery + js -->
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

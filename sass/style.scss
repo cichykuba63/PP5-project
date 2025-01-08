@@ -336,6 +336,18 @@ header.hero-img {
 	.contact-info {
 		padding: 8px 0;
 	}
+
+	.contact-form-box {
+		color: $white;
+
+		.btn {
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 10px 20px;
+			background: none;
+		}
+	}
 }
 
 @media (width >= 430px) {

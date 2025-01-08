@@ -420,6 +420,16 @@ header.hero-img a.icon {
 .contact .contact-info {
   padding: 8px 0;
 }
+.contact .contact-form-box {
+  color: #fff;
+}
+.contact .contact-form-box .btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background: none;
+}
 
 @media (width >= 430px) {
   header.hero-img .hero-text {
